@@ -10,7 +10,7 @@ terraform {
 provider "aws" {
   region = "eu-south-2"
 }
-
+# demo bucket for CI/CD pipeline practice
 resource "aws_s3_bucket" "demo" {
   bucket = "yoder-cicd-pipeline-demo"
 
