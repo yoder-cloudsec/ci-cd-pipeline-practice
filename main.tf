@@ -10,7 +10,7 @@ terraform {
     bucket = "yoder-terraform-state-bucket"
     key = "cicd-pipeline-practice/terraform.tfstate"
     region = "eu-south-2"
-    dynamodb_table = "terraform-locks"
+    use_lockfile = true
     encrypt = true
   }
 }
